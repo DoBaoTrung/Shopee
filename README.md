@@ -11,3 +11,11 @@ Giao diện Shopee sử dụng HTML, CSS và Javascript
 <br>
 <img width="840" height="400" alt="image" src="https://github.com/DoBaoTrung/Shopee/assets/127092095/327d00a5-87c3-47f9-815e-72e8b267be24">
 </br>
+
+<br>
+<img width="840" height="400" alt="image" src="https://github.com/DoBaoTrung/Shopee/assets/127092095/4f9ecf09-f4d3-465d-8bfc-270f2c6067ec">
+</br>
+
+<br>
+<img width="840" height="400" alt="image" src="https://github.com/DoBaoTrung/Shopee/assets/127092095/29098d37-a59a-4445-890f-4c12d55eaffa">
+</br>
