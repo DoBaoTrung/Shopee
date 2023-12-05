@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopee</title>
+    <link rel="shortcut icon" href="./assests/img/favicon/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assests/fonts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap&subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="./assests/css/base.css">
+    <link rel="stylesheet" href="./assests/css/main.css">
+    <link rel="stylesheet" href="./assests/css/responsive.css">
+</head>
+<body>
+    <div id="main">
+        <!-- Begin Header -->
+        <div id="header">
+            <div class="grid">
+                <div class="header__navbar">
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item"><a href="#">Kênh người bán</a></li>
+                        <li class="header__navbar-item header__navbar-list--seperate">
+                            <a href="#">Trở thành Người bán Shopee</a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-list--seperate">
+                            <a href="#">Tải ứng dụng</a>
+                            <div class="header__navbar-qr">
+                                <img src="./assests/img/qr/qr_code.png" alt="qr-code" class="header__qr-img">
+                                <div class="header__navbar-qr-apps">
+                                    <img src="./assests/img/qr/app-store.png" alt="app-store" class="header__qr-download-img">
+                                    <img src="./assests/img/qr/gg-play.png" alt="gg-play" class="header__qr-download-img">
+                                    <img src="./assests/img/qr/app-gallery.png" alt="app-gallery" class="header__qr-download-img">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item header__navbar-list--seperate">
+                            <span class="header__navbar-title--no-pointer">Kết nối</span>
+                            <a class="header__navbar-icon-link" href="#">
+                                <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+                            </a>
+                            <a class="header__navbar-icon-link" href="#">
+                                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="header__navbar-notify">
+                        <li class="header__navbar-item">
+                            <a class="header__navbar-item-link" href="#">
+                                <i class="header__navbar-icon-link fa-regular fa-bell"></i>
+                                Thông báo
+                            </a>
+                            <div class="header__subnav-notify">
+                                <div class="header__subnav-notify-body">
+                                    <img src="./assests/img/Logo/icon.png" alt="icon">
+                                    <p>Đăng nhập để xem thông báo</p>
+                                </div>
+                                <div class="header__subnav-notify-button">
+                                    <button class="header_subnav-button">Đăng ký</button>
+                                    <button class="header_subnav-button">Đăng nhập</button>
+                                </div>
+                            </div>
+                            
+                        </li>
+                        <li class="header__navbar-item">
+                            <a class="header__navbar-item-link" href="#">
+                                <i class="header__navbar-icon-link fa-regular fa-circle-question"></i>
+                                Hỗ trợ
+                            </a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a class="header__navbar-item-link" href="#">
+                                <i class="header__navbar-icon-link fa-solid fa-globe" style="color: #ffffff;"></i>
+                                Tiếng Việt
+                                <i class="fa-solid fa-chevron-down" style="color: #ffffff;"></i>
+                            </a>
+                            <div class="header__subnav-language">
+                                <button>Tiếng Việt</button>
+                                <button>Tiếng Anh</button>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item"><a href="#">Đăng ký</a></li>
+                        <li class="header__navbar-item header__navbar-notify--seperate js-login"><a href="#">Đăng nhập</a></li>
+                    </ul>
+                </div>
+
+                <div class="header__body">
+                    <div class="header__body-logo-shop">
+                        <svg class="logo_img" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="48" viewBox="0 0 50 50">
+                            <path d="M 25 1 C 19.672869 1 15.604123 5.9531422 15.166016 12 L 5.0585938 12 C 3.9235937 12 2.999376 12.980995 3.0625 14.113281 L 4.7871094 44.285156 C 4.9365844 46.922145 7.1369035 49 9.7773438 49 L 40.222656 49 C 42.863851 49 45.063433 46.921831 45.212891 44.285156 L 46.9375 14.115234 C 47.002643 12.982141 46.076406 12 44.941406 12 L 34.833984 12 C 34.395877 5.9531422 30.327131 1 25 1 z M 25 3 C 29.036936 3 32.408924 6.8867916 32.835938 12 L 17.164062 12 C 17.591075 6.8867916 20.963064 3 25 3 z M 5.0585938 14 L 15.832031 14 A 1.0001 1.0001 0 0 0 16.158203 14 L 33.832031 14 A 1.0001 1.0001 0 0 0 34.158203 14 L 44.941406 14 L 43.216797 44.171875 C 43.126254 45.7692 41.823461 47 40.222656 47 L 9.7773438 47 C 8.177784 47 6.8737281 45.768887 6.7832031 44.171875 L 5.0585938 14.001953 L 5.0585938 14 z M 25.074219 18.001953 C 20.760219 18.001953 17.507812 20.689906 17.507812 24.253906 C 17.507812 28.283906 21.2555 29.653328 24.5625 30.861328 C 28.5665 32.324328 30.998047 33.441516 30.998047 36.603516 C 30.998047 39.045516 28.267156 41.033203 24.910156 41.033203 C 21.155156 41.033203 17.973406 38.291672 17.941406 38.263672 L 16.826172 39.90625 C 17.638172 40.56425 20.921156 43.007812 24.910156 43.007812 C 29.430156 43.007813 32.972703 40.194516 32.970703 36.603516 C 32.970703 31.833516 28.864234 30.330813 25.240234 29.007812 C 21.657234 27.696812 19.480469 26.724906 19.480469 24.253906 C 19.480469 21.775906 21.833219 19.976562 25.074219 19.976562 C 27.235219 19.976562 29.115719 20.794703 30.136719 21.345703 C 30.308719 21.437703 30.761672 21.709906 31.013672 21.878906 L 32.035156 20.216797 C 31.801156 20.064797 28.921219 18.001953 25.074219 18.001953 z"></path>
+                        </svg>
+                    </div>
+                    <div class="header__body-search">
+                        <input class="header__body-search-input" type="search" name="search" id="" placeholder="Shopee bao ship 0Đ - Đăng ký ngay!">
+                        <button class="btn"><i class="search-icon fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
+                    </div>
+                    <div class="header__body-product">
+                        <i class="shopping-cart-icon fa-solid fa-cart-shopping" style="color: #ffffff;"></i>
+                    </div>
+                </div>
+                <div class="header__footer">
+                    <ul class="header__footer-list">
+                        <li><a href="#">Pot Điện Tử Hút</a></li>
+                        <li><a href="#">Áo Khoác 1k Freeship</a></li>
+                        <li><a href="#">Áo 0đ</a></li>
+                        <li><a href="#">Săn Sale iPhone 14 Pro Max 1k</a></li>
+                        <li><a href="#">Súng M1887</a></li>
+                        <li><a href="#">Dép 0đ</a></li>
+                        <li><a href="#">Set Đồ</a></li>
+                        <li><a href="#">Vợt Cầu Lông</a></li>
+                        <li><a href="#">Son</a></li>
+                        <li><a href="#">Săn Đồ 0đ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- End Header -->
+
+        <!-- Begin Content -->
+        <div class="content">
+            <!-- Begin: Slider -->
+            <div id="slider" class="grid">
+                <!-- <div class="grid"> -->
+                <div class="slider__content">
+                    <div class="slider__content-prev js-prevButton">
+                        <i class="less-icon fa-solid fa-less-than" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="slider__content-next js-nextButton">
+                        <i class="great-icon fa-solid fa-greater-than" style="color: #ffffff;"></i>
+                    </div>
+
+                    <div class="slider__content-slides">
+                        <input type="radio" name="button" id="radio1">
+                        <input type="radio" name="button" id="radio2">
+                        <input type="radio" name="button" id="radio3">
+                        <input type="radio" name="button" id="radio4">
+                        <input type="radio" name="button" id="radio5">
+                        <input type="radio" name="button" id="radio6">
+                        <input type="radio" name="button" id="radio7">
+                        <input type="radio" name="button" id="radio8">
+                        <input type="radio" name="button" id="radio9">
+                        <input type="radio" name="button" id="radio10">
+
+                        <div class="slide first">
+                            <img src="./assests/img/slider/slider1.jpg" alt="picture">
+                        </div>
+                        <div class="slide">
+                            <img src="./assests/img/slider/slider1.jpg" alt="picture">
+                        </div>
+                        <div class="slide">
+                            <img src="./assests/img/slider/slider1.jpg" alt="picture">
+                        </div>
+                        <div class="slide">
+                            <img src="./assests/img/slider/slider1.jpg" alt="picture">
+                        </div>
+                        <div class="slide">
+                            <img src="./assests/img/slider/slider1.jpg" alt="picture">
+                        </div>
+                        <div class="slide">
+                            <img src="./assests/img/slider/slider1.jpg" alt="picture">
+                        </div>
+                        <div class="slide">
+                            <img src="./assests/img/slider/slider1.jpg" alt="picture">
+                        </div>
+                        <div class="slide">
+                            <img src="./assests/img/slider/slider1.jpg" alt="picture">
+                        </div>
+                        <div class="slide">
+                            <img src="./assests/img/slider/slider1.jpg" alt="picture">
+                        </div>
+                        <div class="slide">
+                            <img src="./assests/img/slider/slider1.jpg" alt="picture">
+                        </div>
+                        
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                            <div class="auto-btn5"></div>
+                            <div class="auto-btn6"></div>
+                            <div class="auto-btn7"></div>
+                            <div class="auto-btn8"></div>
+                            <div class="auto-btn9"></div>
+                            <div class="auto-btn10"></div>
+                        </div>
+
+                        <div class="navigation-manual">
+                            <label for="radio1" class="manual-btn"></label>
+                            <label for="radio2" class="manual-btn"></label>
+                            <label for="radio3" class="manual-btn"></label>
+                            <label for="radio4" class="manual-btn"></label>
+                            <label for="radio5" class="manual-btn"></label>
+                            <label for="radio6" class="manual-btn"></label>
+                            <label for="radio7" class="manual-btn"></label>
+                            <label for="radio8" class="manual-btn"></label>
+                            <label for="radio9" class="manual-btn"></label>
+                            <label for="radio10" class="manual-btn"></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="banner">
+                    <div class="banner-1">
+                        <!-- abcs -->
+                        <img src="./assests/img/slider/slider2.jpg" alt="picture">
+                    </div>
+                    <div class="banner-2">
+                        <!-- acascas -->
+                        <img src="./assests/img/slider/slider3.jpg" alt="picture">
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+            <!-- End Slider -->
+
+            <div class="slider__hot-main">
+                <div class="slider__hot">
+                    <a class="slider__hot-link" href="#">
+                        <div class="slider-hot-border">
+                            <div class="slider__hot-item"></div>
+                        </div>
+                        <div class="slider__hot-text">
+                            Khung Giờ Săn Sale
+                        </div>
+                    </a>
+
+                    <a class="slider__hot-link" href="#">
+                        <div class="slider-hot-border">
+                            <div class="slider__hot-item"></div>
+                        </div>
+                        <div class="slider__hot-text">
+                            Miễn phí Ship-Có Shopee
+                        </div>
+                    </a>
+
+                    <a class="slider__hot-link" href="#">
+                        <div class="slider-hot-border">
+                            <div class="slider__hot-item"></div>
+                        </div>
+                        <div class="slider__hot-text">
+                            Voucher Giảm Đến 500.000Đ
+                        </div>
+                    </a>
+
+                    <a class="slider__hot-link" href="#">
+                        <div class="slider-hot-border">
+                            <div class="slider__hot-item"></div>
+                        </div>
+                        <div class="slider__hot-text">
+                            Hàng Hiệu Outlet Giảm 50%
+                        </div>
+                    </a>
+
+                    <a class="slider__hot-link" href="#">
+                        <div class="slider-hot-border">
+                            <div class="slider__hot-item"></div>
+                        </div>
+                        <div class="slider__hot-text">
+                            Mã Giảm Giá
+                        </div>
+                    </a>
+
+                    <a class="slider__hot-link" href="#">
+                        <div class="slider-hot-border">
+                            <div class="slider__hot-item"></div>
+                        </div>
+                        <div class="slider__hot-text">
+                            Gì Cũng Rẻ-Deal Sốc 9.000Đ
+                        </div>
+                    </a>
+
+                    <a class="slider__hot-link" href="#">
+                        <div class="slider-hot-border">
+                            <div class="slider__hot-item"></div>
+                        </div>
+                        <div class="slider__hot-text">
+                            Nạp Thẻ, Dịch Vụ & Data
+                        </div>
+                    </a>
+
+                    <a class="slider__hot-link" href="#">
+                        <div class="slider-hot-border">
+                            <div class="slider__hot-item"></div>
+                        </div>
+                        <div class="slider__hot-text">
+                            Hàng Quốc Tế
+                        </div>
+                    </a>
+
+                    <a class="slider__hot-link" href="#">
+                        <div class="slider-hot-border">
+                            <div class="slider__hot-item"></div>
+                        </div>
+                        <div class="slider__hot-text">
+                            Bắt Trend-Giá Sốc
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="goods grid mt-15">
+                <div class="goods__title">
+                    <p>DANH MỤC</p>
+                </div>
+                <div class="goods__list">
+                    <div class="goods__list-item">
+                        <img src="./assests/img/Logo/logo1.png" alt="">
+                        <div class="goods__list-item-name">
+                            Thời Trang Nam
+                        </div>
+                    </div>
+                    <div class="goods__list-item">
+                        <img src="./assests/img/Logo/logo1.png" alt="">
+                        <div class="goods__list-item-name">
+                            Thời Trang Nam
+                        </div>
+                    </div>
+                    <div class="goods__list-item">
+                        <img src="./assests/img/Logo/logo1.png" alt="">
+                        <div class="goods__list-item-name">
+                            Thời Trang Nam
+                        </div>
+                    </div>
+                    <div class="goods__list-item">
+                        <img src="./assests/img/Logo/logo1.png" alt="">
+                        <div class="goods__list-item-name">
+                            Thời Trang Nam
+                        </div>
+                    </div>
+                    <div class="goods__list-item">
+                        <img src="./assests/img/Logo/logo1.png" alt="">
+                        <div class="goods__list-item-name">
+                            Thời Trang Nam
+                        </div>
+                    </div>
+                    <div class="goods__list-item">
+                        <img src="./assests/img/Logo/logo1.png" alt="">
+                        <div class="goods__list-item-name">
+                            Thời Trang Nam
+                        </div>
+                    </div>
+                    <div class="goods__list-item">
+                        <img src="./assests/img/Logo/logo1.png" alt="">
+                        <div class="goods__list-item-name">
+                            Thời Trang Nam
+                        </div>
+                    </div>
+                    <div class="goods__list-item">
+                        <img src="./assests/img/Logo/logo1.png" alt="">
+                        <div class="goods__list-item-name">
+                            Thời Trang Nam
+                        </div>
+                    </div>
+                    <div class="goods__list-item">
+                        <img src="./assests/img/Logo/logo1.png" alt="">
+                        <div class="goods__list-item-name">
+                            Thời Trang Nam
+                        </div>
+                    </div>
+                    <div class="goods__list-item">
+                        <img src="./assests/img/Logo/logo1.png" alt="">
+                        <div class="goods__list-item-name">
+                            Thời Trang Nam
+                        </div>
+                    </div>
+                    <div class="goods__list-item">
+                        <img src="./assests/img/Logo/logo1.png" alt="">
+                        <div class="goods__list-item-name">
+                            Thời Trang Nam
+                        </div>
+                    </div>
+                    <div class="goods__list-item">
+                        <img src="./assests/img/Logo/logo1.png" alt="">
+                        <div class="goods__list-item-name">
+                            Thời Trang Nam
+                        </div>
+                    </div>
+                    <div class="goods__list-item">
+                        <img src="./assests/img/Logo/logo1.png" alt="">
+                        <div class="goods__list-item-name">
+                            Thời Trang Nam
+                        </div>
+                    </div>
+                    <div class="goods__list-item">
+                        <img src="./assests/img/Logo/logo1.png" alt="">
+                        <div class="goods__list-item-name">
+                            Thời Trang Nam
+                        </div>
+                    </div>
+                    <div class="goods__list-item">
+                        <img src="./assests/img/Logo/logo1.png" alt="">
+                        <div class="goods__list-item-name">
+                            Thời Trang Nam
+                        </div>
+                    </div>
+                    <div class="goods__list-item">
+                        <img src="./assests/img/Logo/logo1.png" alt="">
+                        <div class="goods__list-item-name">
+                            Thời Trang Nam
+                        </div>
+                    </div>
+                    <div class="goods__list-item">
+                        <img src="./assests/img/Logo/logo1.png" alt="">
+                        <div class="goods__list-item-name">
+                            Thời Trang Nam
+                        </div>
+                    </div>
+                    <div class="goods__list-item">
+                        <img src="./assests/img/Logo/logo1.png" alt="">
+                        <div class="goods__list-item-name">
+                            Thời Trang Nam
+                        </div>
+                    </div>
+                    <div class="goods__list-item">
+                        <img src="./assests/img/Logo/logo1.png" alt="">
+                        <div class="goods__list-item-name">
+                            Thời Trang Nam
+                        </div>
+                    </div>
+                    <div class="goods__list-item">
+                        <img src="./assests/img/Logo/logo1.png" alt="">
+                        <div class="goods__list-item-name">
+                            Thời Trang Nam
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FLASH SALE -->
+            <div class="content__flashsale grid mt-15">
+                <div class="content__flashsale-header">
+                    <div class="content__flashsale-title">
+                        <img src="./assests/img/Logo/flashsale.png" alt="flashsale">
+                        <div class="content__flashsale-countdown">
+                            <span>00</span>
+                        </div>
+                        <div class="content__flashsale-countdown">
+                            <span>00</span>
+                        </div>
+                        <div class="content__flashsale-countdown">
+                            <span>00</span>
+                        </div>
+                    </div>
+
+                    <div class="content__flashsale-watch-all">
+                        <a href="#">Xem tất cả <i class="greater-icon fa-solid fa-greater-than"></i></a>
+                    </div>
+                </div>
+
+                <div class="content__flashsale-list">
+                    <!-- Item 1 -->
+                    <div class="content__flashsale-item">
+                        <div class="content__flashsale-img">
+                            <img src="./assests/img/Product/product2.jpg" alt="picture" class="flashsale-img">
+                        </div>
+    
+                        <div class="content__flashsale-costs-quantity">
+                            <div class="flashsale__edit">
+                                <div class="flashsale-costs">
+                                    <span class="cost">
+                                        <span class="currency">đ</span>
+                                        129.000
+                                    </span>
+                                </div>
+                                
+                                <div class="flashsale-quantity">
+                                    <p>ĐÃ BÁN 29</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="content__flashsale-item">
+                        <div class="content__flashsale-img">
+                            <img src="./assests/img/Product/product2.jpg" alt="picture" class="flashsale-img">
+                        </div>
+    
+                        <div class="content__flashsale-costs-quantity">
+                            <div class="flashsale__edit">
+                                <div class="flashsale-costs">
+                                    <span class="cost">
+                                        <span class="currency">đ</span>
+                                        129.000
+                                    </span>
+                                </div>
+                                
+                                <div class="flashsale-quantity">
+                                    <p>ĐÃ BÁN 29</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="content__flashsale-item">
+                        <div class="content__flashsale-img">
+                            <img src="./assests/img/Product/product2.jpg" alt="picture" class="flashsale-img">
+                        </div>
+    
+                        <div class="content__flashsale-costs-quantity">
+                            <div class="flashsale__edit">
+                                <div class="flashsale-costs">
+                                    <span class="cost">
+                                        <span class="currency">đ</span>
+                                        129.000
+                                    </span>
+                                </div>
+                                
+                                <div class="flashsale-quantity">
+                                    <p>ĐÃ BÁN 29</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="content__flashsale-item">
+                        <div class="content__flashsale-img">
+                            <img src="./assests/img/Product/product2.jpg" alt="picture" class="flashsale-img">
+                        </div>
+    
+                        <div class="content__flashsale-costs-quantity">
+                            <div class="flashsale__edit">
+                                <div class="flashsale-costs">
+                                    <span class="cost">
+                                        <span class="currency">đ</span>
+                                        129.000
+                                    </span>
+                                </div>
+                                
+                                <div class="flashsale-quantity">
+                                    <p>ĐÃ BÁN 29</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="content__flashsale-item">
+                        <div class="content__flashsale-img">
+                            <img src="./assests/img/Product/product2.jpg" alt="picture" class="flashsale-img">
+                        </div>
+    
+                        <div class="content__flashsale-costs-quantity">
+                            <div class="flashsale__edit">
+                                <div class="flashsale-costs">
+                                    <span class="cost">
+                                        <span class="currency">đ</span>
+                                        129.000
+                                    </span>
+                                </div>
+                                
+                                <div class="flashsale-quantity">
+                                    <p>ĐÃ BÁN 29</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 6 -->
+                    <div class="content__flashsale-item">
+                        <div class="content__flashsale-img">
+                            <img src="./assests/img/Product/product2.jpg" alt="picture" class="flashsale-img">
+                        </div>
+    
+                        <div class="content__flashsale-costs-quantity">
+                            <div class="flashsale__edit">
+                                <div class="flashsale-costs">
+                                    <span class="cost">
+                                        <span class="currency">đ</span>
+                                        129.000
+                                    </span>
+                                </div>
+                                
+                                <div class="flashsale-quantity">
+                                    <p>ĐÃ BÁN 29</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END FLASH SALE -->
+
+            <!-- BANNER -->
+            <div class="content__banner grid mt-15">
+                <img src="./assests/img/banner/1.png" style="width: 100%;" alt="picture">
+            </div>
+
+            <!-- SHOPEE MALL -->
+            <div class="content__shoppemall grid mt-15">
+                <div class="header__shopeemall">
+                    <ul class="header__shopeemall-list">
+                        <li class="header__shopeemall-title">SHOPEE MALL</li>
+                        <li>7 Ngày Miễn Phí Trả Hàng</li>
+                        <li>Hàng Chính Hãng 100%</li>
+                        <li>Miễn Phí Vận Chuyển</li>
+                    </ul>
+
+                    <div class="header__shopeemall-watchall">
+                        <button>Xem Tất Cả</button>
+                    </div>
+                </div>
+
+                <div class="slider__shopeemall">
+                    <div class="slider__shopeemall-slider">
+                        <div class="slider__shopeemall-slides">
+                            <input type="radio" name="radio" id="slider__shopeemall-radio1">
+                            <input type="radio" name="radio" id="slider__shopeemall-radio2">
+                            <input type="radio" name="radio" id="slider__shopeemall-radio3">
+                            <input type="radio" name="radio" id="slider__shopeemall-radio4">
+                            <input type="radio" name="radio" id="slider__shopeemall-radio5">
+                            <input type="radio" name="radio" id="slider__shopeemall-radio6">
+                            <input type="radio" name="radio" id="slider__shopeemall-radio7">
+                            <input type="radio" name="radio" id="slider__shopeemall-radio8">
+
+                            <div class="slide first">
+                                <img src="./assests/img/slider/slider4.jpg" alt="picture">
+                            </div>
+                            <div class="slide">
+                                <img src="./assests/img/slider/slider4.jpg" alt="picture">
+                            </div>
+                            <div class="slide">
+                                <img src="./assests/img/slider/slider4.jpg" alt="picture">
+                            </div>
+                            <div class="slide">
+                                <img src="./assests/img/slider/slider4.jpg" alt="picture">
+                            </div>
+                            <div class="slide">
+                                <img src="./assests/img/slider/slider4.jpg" alt="picture">
+                            </div>
+                            <div class="slide">
+                                <img src="./assests/img/slider/slider4.jpg" alt="picture">
+                            </div>
+                            <div class="slide">
+                                <img src="./assests/img/slider/slider4.jpg" alt="picture">
+                            </div>
+                            <div class="slide">
+                                <img src="./assests/img/slider/slider4.jpg" alt="picture">
+                            </div>
+
+                            <div class="slider__shopeemall-auto">
+                                <div class="slider__shoppemall-auto-btn1"></div>
+                                <div class="slider__shoppemall-auto-btn2"></div>
+                                <div class="slider__shoppemall-auto-btn3"></div>
+                                <div class="slider__shoppemall-auto-btn4"></div>
+                                <div class="slider__shoppemall-auto-btn5"></div>
+                                <div class="slider__shoppemall-auto-btn6"></div>
+                                <div class="slider__shoppemall-auto-btn7"></div>
+                                <div class="slider__shoppemall-auto-btn8"></div>
+                            </div>
+
+                            <div class="slider__shopeemall-manual">
+                                <label for="slider__shopeemall-radio1" class="shopeemall-manual"></label>
+                                <label for="slider__shopeemall-radio2" class="shopeemall-manual"></label>
+                                <label for="slider__shopeemall-radio3" class="shopeemall-manual"></label>
+                                <label for="slider__shopeemall-radio4" class="shopeemall-manual"></label>
+                                <label for="slider__shopeemall-radio5" class="shopeemall-manual"></label>
+                                <label for="slider__shopeemall-radio6" class="shopeemall-manual"></label>
+                                <label for="slider__shopeemall-radio7" class="shopeemall-manual"></label>
+                                <label for="slider__shopeemall-radio8" class="shopeemall-manual"></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slider__shopeemall-list">
+                        <div class="slider__shopeemall-item">
+                            <img src="./assests/img/Product/product1.jpg" alt="picture">
+                            <div class="slider__shopeemall-text">
+                                <p>Mua là có quà</p>
+                            </div>
+                        </div>
+                        <div class="slider__shopeemall-item">
+                            <img src="./assests/img/Product/product1.jpg" alt="picture">
+                            <div class="slider__shopeemall-text">
+                                <p>Mua là có quà</p>
+                            </div>
+                        </div>
+                        <div class="slider__shopeemall-item">
+                            <img src="./assests/img/Product/product1.jpg" alt="picture">
+                            <div class="slider__shopeemall-text">
+                                <p>Mua là có quà</p>
+                            </div>
+                        </div>
+                        <div class="slider__shopeemall-item">
+                            <img src="./assests/img/Product/product1.jpg" alt="picture">
+                            <div class="slider__shopeemall-text">
+                                <p>Mua là có quà</p>
+                            </div>
+                        </div>
+                        <div class="slider__shopeemall-item">
+                            <img src="./assests/img/Product/product1.jpg" alt="picture">
+                            <div class="slider__shopeemall-text">
+                                <p>Mua là có quà</p>
+                            </div>
+                        </div>
+                        <div class="slider__shopeemall-item">
+                            <img src="./assests/img/Product/product1.jpg" alt="picture">
+                            <div class="slider__shopeemall-text">
+                                <p>Mua là có quà</p>
+                            </div>
+                        </div>
+                        <div class="slider__shopeemall-item">
+                            <img src="./assests/img/Product/product1.jpg" alt="picture">
+                            <div class="slider__shopeemall-text">
+                                <p>Mua là có quà</p>
+                            </div>
+                        </div>
+                        <div class="slider__shopeemall-item">
+                            <img src="./assests/img/Product/product1.jpg" alt="picture">
+                            <div class="slider__shopeemall-text">
+                                <p>Mua là có quà</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BEGIN: DISPLAY MULTI IMAGE ON SLIDE -->
+            <div class="display-area grid">
+                <div class="display-area-prev js-display-prev">
+                    <i class="less-icon fa-solid fa-less-than"></i>
+                </div>
+                <div class="display-area-next js-display-next">
+                    <i class="great-icon fa-solid fa-greater-than"></i>
+                </div>
+                <div class="cards-wrapper">
+                    <div class="card"><img src="https://picsum.photos/200?random=1" alt="picture"></div>
+                    <div class="card"><img src="https://picsum.photos/200?random=2" alt="picture"></div>  
+                    <div class="card"><img src="https://picsum.photos/200?random=3" alt="picture"></div>
+                    <div class="card"><img src="https://picsum.photos/200?random=4" alt="picture"></div>
+
+                    <div class="card"><img src="https://picsum.photos/200?random=5" alt="picture"></div>
+                    <div class="card"><img src="https://picsum.photos/200?random=6" alt="picture"></div>  
+                    <div class="card"><img src="https://picsum.photos/200?random=7" alt="picture"></div>
+                    <div class="card"><img src="https://picsum.photos/200?random=8" alt="picture"></div>
+                    
+                    <div class="card"><img src="https://picsum.photos/200?random=9" alt="picture"></div>
+                    <div class="card"><img src="https://picsum.photos/200?random=10" alt="picture"></div>  
+                    <div class="card"><img src="https://picsum.photos/200?random=11" alt="picture"></div>
+                    <div class="card"><img src="https://picsum.photos/200?random=12" alt="picture"></div>
+                    
+                    <div class="card"><img src="https://picsum.photos/200?random=13" alt="picture"></div>
+                    <div class="card"><img src="https://picsum.photos/200?random=14" alt="picture"></div>  
+                    <div class="card"><img src="https://picsum.photos/200?random=15" alt="picture"></div>
+                    <div class="card"><img src="https://picsum.photos/200?random=16" alt="picture"></div>
+                    <div class="card"><img src="https://picsum.photos/200?random=17" alt="picture"></div>
+                    <div class="card"><img src="https://picsum.photos/200?random=18" alt="picture"></div>
+
+                    <div class="card"><img src="https://picsum.photos/200?random=20" alt="picture"></div>
+                    <div class="card"><img src="https://picsum.photos/200?random=21" alt="picture"></div>  
+                    <div class="card"><img src="https://picsum.photos/200?random=22" alt="picture"></div>
+                    <div class="card"><img src="https://picsum.photos/200?random=23" alt="picture"></div>
+                    <div class="card"><img src="https://picsum.photos/200?random=24" alt="picture"></div>
+                    <div class="card"><img src="https://picsum.photos/200?random=25" alt="picture"></div>
+                </div>
+            </div>
+
+            <div class="dots-wrapper grid mt-15">
+                <button id="dot" class="dot active"></button>
+                <button id="dot" class="dot"></button>
+                <button id="dot" class="dot"></button>
+                <button id="dot" class="dot"></button>
+            </div>
+            <!-- END: DISPLAY MULTI IMAGE ON SLIDE -->
+        </div>
+
+        <!-- Begin Footer -->
+        <footer class="footer">
+            <div class="footer-grid grid">
+                <div class="footer__care-customer">
+                    <div class="footer__care-customer-title">
+                        <h3>CHĂM SÓC KHÁCH HÀNG</h3>
+                    </div>
+                    <ul class="footer__care-customer-list">
+                        <li class="footer__care-customer-item"><a href="#">Trung Tâm Trợ Giúp</a></li>
+                        <li class="footer__care-customer-item"><a href="#">Trung Tâm Trợ Giúp</a></li>
+                        <li class="footer__care-customer-item"><a href="#">Trung Tâm Trợ Giúp</a></li>
+                        <li class="footer__care-customer-item"><a href="#">Trung Tâm Trợ Giúp</a></li>
+                        <li class="footer__care-customer-item"><a href="#">Trung Tâm Trợ Giúp</a></li>
+                        <li class="footer__care-customer-item"><a href="#">Trung Tâm Trợ Giúp</a></li>
+                        <li class="footer__care-customer-item"><a href="#">Trung Tâm Trợ Giúp</a></li>
+                        <li class="footer__care-customer-item"><a href="#">Trung Tâm Trợ Giúp</a></li>
+                        <li class="footer__care-customer-item"><a href="#">Trung Tâm Trợ Giúp</a></li>
+                        <li class="footer__care-customer-item"><a href="#">Trung Tâm Trợ Giúp</a></li>
+                        <li class="footer__care-customer-item"><a href="#">Trung Tâm Trợ Giúp</a></li>
+                    </ul>
+                </div>
+                <div class="footer__about-shopee">
+                    <div class="footer__about-shopee-title">
+                        <h3>VỀ SHOPEE</h3>
+                    </div>
+                    <ul class="footer__about-shopee-list">
+                        <li class="footer__about-shopee-item"><a href="#">Giới Thiệu Về Shopee Việt Nam</a></li>
+                        <li class="footer__about-shopee-item"><a href="#">Giới Thiệu Về Shopee Việt Nam</a></li>
+                        <li class="footer__about-shopee-item"><a href="#">Giới Thiệu Về Shopee Việt Nam</a></li>
+                        <li class="footer__about-shopee-item"><a href="#">Giới Thiệu Về Shopee Việt Nam</a></li>
+                        <li class="footer__about-shopee-item"><a href="#">Giới Thiệu Về Shopee Việt Nam</a></li>
+                        <li class="footer__about-shopee-item"><a href="#">Giới Thiệu Về Shopee Việt Nam</a></li>
+                        <li class="footer__about-shopee-item"><a href="#">Giới Thiệu Về Shopee Việt Nam</a></li>
+                        <li class="footer__about-shopee-item"><a href="#">Giới Thiệu Về Shopee Việt Nam</a></li>
+                        <li class="footer__about-shopee-item"><a href="#">Giới Thiệu Về Shopee Việt Nam</a></li>
+                    </ul>
+                </div>
+                <div class="footer__pay-transport">
+                    <div class="footer-pay-title">
+                        <h3>THANH TOÁN</h3>
+                    </div>
+                    <ul class="footer__pay-list">
+                        <li class="footer__pay-item"><img src="./assests/img/footer/icon.png" alt="picture" class="footer-pay-img"></li>
+                        <li class="footer__pay-item"><img src="./assests/img/footer/icon.png" alt="picture" class="footer-pay-img"></li>
+                        <li class="footer__pay-item"><img src="./assests/img/footer/icon.png" alt="picture" class="footer-pay-img"></li>
+                        <li class="footer__pay-item"><img src="./assests/img/footer/icon.png" alt="picture" class="footer-pay-img"></li>
+                        <li class="footer__pay-item"><img src="./assests/img/footer/icon.png" alt="picture" class="footer-pay-img"></li>
+                        <li class="footer__pay-item"><img src="./assests/img/footer/icon.png" alt="picture" class="footer-pay-img"></li>
+                        <li class="footer__pay-item"><img src="./assests/img/footer/icon.png" alt="picture" class="footer-pay-img"></li>
+                        <li class="footer__pay-item"><img src="./assests/img/footer/icon.png" alt="picture" class="footer-pay-img"></li>
+                    </ul>
+                    
+                    <div class="footer-transport-title">
+                        <h3>ĐƠN VỊ VẬN CHUYỂN</h3>
+                    </div>
+                    <ul class="footer__transport-list">
+                        <li class="footer__transport-item"><img src="./assests/img/footer/icon.png" alt="picture" class="footer-pay-img"></li>
+                        <li class="footer__transport-item"><img src="./assests/img/footer/icon.png" alt="picture" class="footer-pay-img"></li>
+                        <li class="footer__transport-item"><img src="./assests/img/footer/icon.png" alt="picture" class="footer-pay-img"></li>
+                        <li class="footer__transport-item"><img src="./assests/img/footer/icon.png" alt="picture" class="footer-pay-img"></li>
+                        <li class="footer__transport-item"><img src="./assests/img/footer/icon.png" alt="picture" class="footer-pay-img"></li>
+                        <li class="footer__transport-item"><img src="./assests/img/footer/icon.png" alt="picture" class="footer-pay-img"></li>
+                        <li class="footer__transport-item"><img src="./assests/img/footer/icon.png" alt="picture" class="footer-pay-img"></li>
+                        <li class="footer__transport-item"><img src="./assests/img/footer/icon.png" alt="picture" class="footer-pay-img"></li>
+                        <li class="footer__transport-item"><img src="./assests/img/footer/icon.png" alt="picture" class="footer-pay-img"></li>
+                        <li class="footer__transport-item"><img src="./assests/img/footer/icon.png" alt="picture" class="footer-pay-img"></li>
+                        <li class="footer__transport-item"><img src="./assests/img/footer/icon.png" alt="picture" class="footer-pay-img"></li>
+                    </ul>
+                </div>
+                <div class="footer__follow">
+                    <div class="footer__follow-title">
+                        <h3>THEO DÕI CHÚNG TÔI TRÊN</h3>
+                    </div>
+                    <ul class="footer__follow-list">
+                        <li class="footer__follow-item"><a href="#" class="footer__follow-link"><i class="social-icon fa-brands fa-facebook"></i> Facebook</a></li>
+                        <li class="footer__follow-item"><a href="#" class="footer__follow-link"><i class="social-icon fa-brands fa-instagram"></i> Instagram</a></li>
+                        <li class="footer__follow-item"><a href="#" class="footer__follow-link"><i class="social-icon fa-brands fa-linkedin"></i> linkedln</a></li>
+                    </ul>
+                </div>
+                <div class="footer__app-download">
+                    <div class="footer__app-download-title">
+                        <h3>TẢI ỨNG DỤNG SHOPEE NGAY THÔI</h3>
+                    </div>
+                    <div class="footer__qr">
+                        <a class="qr_icon" href="#">
+                            <img src="./assests/img/footer/qr.png" alt="pciture">
+                        </a>
+                        <div class="qr_store">
+                            <a href="#" class="app-store-link">
+                                <img src="./assests/img/footer/app_store.png" alt="picture">
+                            </a>
+                            <a href="#" class="app-store-link">
+                                <img src="./assests/img/footer/gg_play.png" alt="picture">
+                            </a>
+                            <a href="#" class="app-store-link">
+                                <img src="./assests/img/footer/app_gallery.png" alt="picture">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__copyright grid">
+                <div class="footer__copyright-year">
+                    <p>&copy; 2023 Shopee. Tất cả các quyền được bảo lưu.</p>
+                </div>
+
+                <div class="footer__copyright-area">
+                    <div class="footer__copyright-area-title">
+                        <p>Quốc gia & khu vực:</p>
+                    </div>
+                    <ul class="national">
+                        <li><a href="#">Singapore</a></li>
+                        <li><a href="#">Indonesia</a></li>
+                        <li><a href="#">Đài loan</a></li>
+                        <li><a href="#">Thái Lan</a></li>
+                        <li><a href="#">Malaysia</a></li>
+                        <li><a href="#">Việt Nam</a></li>
+                        <li><a href="#">Philippines</a></li>
+                        <li><a href="#">Brazil</a></li>
+                        <li><a href="#">Mexico</a></li>
+                        <li><a href="#">Colombia</a></li>
+                        <li><a href="#">Chile</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+    </div>
+    <!-- Modal -->
+    <div class="modal js-modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body js-modal-body">
+            <div class="modal__container">
+                <div class="modal__container-close js-modal-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <header class="modal__container-header">
+                    <h2>Đăng nhập</h2>
+                </header>
+                <div class="modal__container-form">
+                    <input type="email" name="Email" id="email" placeholder="Email" class="form-control">
+                    <input type="password" name="Password" id="password" placeholder="Mật khẩu" class="form-control">
+                    <input type="submit" value="ĐĂNG NHẬP" class="btn-control">
+
+                    <div class="modal__container-subform">
+                        <div class="modal__container-forgot">
+                            <a href="#">Quên mật khẩu</a>
+                        </div>
+                        <div class="modal__container-loginSMS">
+                            <a href="#">Đăng nhập với SMS</a>
+                        </div>
+                    </div>
+
+                    <div class="modal__container-footer">
+                        <div class="line"></div>
+                        <div class="or">HOẶC</div>
+                        <div class="line"></div>
+                    </div>
+
+                    <div class="modal__container-socials">
+                        <button class="modal__container-socilas-facebook"><i class="fa-brands fa-facebook"></i> Facebook</button>
+                        <button class="modal__container-socilas-google"><i class="fa-brands fa-google-plus"></i> Google</button>
+                    </div>
+                    <p style="text-align: center; margin-top: 20px;" class="newbie">Bạn mới biết đến Shopee? <a style="text-decoration: none; color: var(--primary-color);" href="#">Đăng ký</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script text="text/javascript" src="./assests/js/slider.js"></script>
+    <script text="text/javascript" src="./assests/js/modal.js"></script>
+    <script text="text/javascript" src="./assests/js/wrap_slider.js"></script>
+    <script text="text/javascript" src="./assests/js/slider-shopeemall.js"></script>
+    <script text="text/javascript" src="./assests/js/notify.js"></script>
+    <script text="text/javascript" src="./assests/js/sliders.js"></script>
+</body>
+</html>

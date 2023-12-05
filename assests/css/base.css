@@ -1,0 +1,113 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --gray-color: #ccc;
+    --primary-color: #EE4D2D;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    /* height: 4000px; */
+    /* background-color: aquamarine; */
+}
+
+.grid {
+    width: 1300px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-with {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    display: none;
+}
+
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal__body {
+    width: 400px;
+    height: 450px;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    position: relative;
+    margin: 50px auto;
+    z-index: 3;
+    font-size: 1.4rem;
+    /* animation: loginFormFadeIn ease 0.3s; */
+}
+
+.modal__container {
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+}
+
+.modal__container-form input {
+    margin-top: 30px;
+    padding: 12px 8px;
+}
+
+.form-control {
+    width: 100%;
+    border: 1px solid var(--gray-color);
+}
+
+.btn-control {
+    width: 100%;
+    border: 1px solid var(--gray-color);
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.btn-control:hover {
+    opacity: 0.7;
+}
+
+.modal__container-subform {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal__container-subform a {
+    color: rgb(42, 100, 147);
+    text-decoration: none;
+}
+
+.modal__container-subform a:hover {
+    color: rgb(25, 32, 150);
+}
+
+.modal__container-footer {
+    display: flex;
+}
+
+
