@@ -9,5 +9,5 @@ Giao diện Shopee sử dụng HTML, CSS và Javascript
 
 ## Một số hình ảnh giao diện
 <br>
-<img width="420" alt="image" src="https://github.com/DoBaoTrung/Shopee/assets/127092095/327d00a5-87c3-47f9-815e-72e8b267be24">
+<img width="840" height="400" alt="image" src="https://github.com/DoBaoTrung/Shopee/assets/127092095/327d00a5-87c3-47f9-815e-72e8b267be24">
 </br>
